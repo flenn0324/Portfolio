@@ -1,0 +1,92 @@
+.navbar
+{
+    background-color: rgb(243, 242, 242);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(121, 7, 131) ;
+}
+#brand{
+    color: rgb(0, 0, 0);
+}
+#navbarNav1,#navbarNav2,#navbarNav3,#navbarNav4,#navbarNav5
+{
+    color:rgb(121, 7, 131);
+}
+a{
+    text-decoration: none;
+}
+#light
+{
+    display: none;
+}
+.title
+{
+    color: rgb(121, 7, 131);
+}
+.nav-link:hover
+{
+    font-size: 15px;
+}
+.card-color
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.purple
+{
+    color: rgb(121, 7, 131);
+}
+.bot-purple
+{
+    background-color: rgb(121, 7, 131);
+}
+.bot-purple:hover
+{
+    background-color: rgb(192, 39, 206);
+}
+.border-purple
+{
+    border-left-style: solid;
+    border-color: rgb(121, 7, 131);
+}
+.ihover:hover
+{
+    color: rgb(192, 39, 206);
+}
+
+.bi-star-fill:hover , .bi-star-half:hover
+{
+    font-size: 14px;
+}
+.bi-star-fill , .bi-star-half , .bi-star
+{
+    color: rgb(121, 7, 131);
+}
+#footer
+{
+    color: white;
+}
+.footer-bg
+{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(121, 7, 131);
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(121, 7, 131) ;
+}
+.list-purple
+{
+    background-color: rgb(121, 7, 131);
+}
+.list-purple:hover
+{
+    font-size: 15px;
+}
+.footerwh
+{
+    color: white;
+}

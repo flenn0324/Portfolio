@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+
+</head>
+<body id="body">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light " id="navbg">
+        <div class="container-fluid my-1">
+            <a class="navbar-brand  px-5 ms-5" id="brand" href="#"> <i class="bi bi-file-earmark-code fs-3 purple"></i> My Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" >
+                <ul class="navbar-nav">
+                    <li class="nav-item px-1">
+                        <a class="nav-link" id="navbarNav1"  aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link " id="navbarNav2"   href="#about">About me</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link " id="navbarNav3"  href="#skills">My skills</a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link"  id="navbarNav4" href="#projects">My projects</a>
+                    </li>
+                    <li class="nav-item ps-1 me-3">
+                        <a class="nav-link" id="navbarNav5"  href="#contact">Contact me</a>
+                    </li>
+                    <li class="nav-item ps-1 me-5 " id="dark">
+                        <a class="nav-link"  onclick="changebgcolor();"  href="#"><i style="color: rgb(77, 4, 83);"class="bi bi-moon-fill"></i></a>
+                    </li>
+                    <li class="nav-item me-5" id="light">
+                        <a class="nav-link" href="#" onclick="lightmode();"><i style="color: rgb(223, 226, 39);"class="bi bi-moon-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container-lg py-5 my-5">
+            <div class="row text-center justify-content-center align-items-center">
+                <div class="col-md-6 text-md-start text-lg-start">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3  d-none d-lg-block">
+                            <a href="#" class="fs-2 d-block purple ihover"><i class="bi bi-github"></i></a>
+                            <a href="#" class="fs-2 d-block my-2 purple ihover"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="fs-2 d-block purple ihover"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                        <div class="col-lg-9 ">
+                            <h1>
+                                <div class="display-6 my-4 ">BRAHIMI Zakaria</div>
+                                <div class="fs-3 my-2">Software engineer Student <i class="bi bi-laptop"></i></div>
+                            </h1>
+                            <button  type="button" class="btn btn-lg my-3 bot-purple" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <span class="fs-4 text-white">Contact me</span>  <i class="bi bi-envelope-fill text-white ms-2"></i>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-5 text-center">
+                    <img class="img-fluid img-thumbnail rounded-circle" src="image/pino.jpg" alt="it's me">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header  bg-secondary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluide">
+                        <p class="lead mt-2">You can call me or send me an Email:</p>
+                        <ul class="list-group list-group-flush my-2">
+                            <li class="list-group-item "><i class="bi bi-telephone me-2"></i>Phone number : 0797 78 20 90</li>
+                            <li class="list-group-item "><i class="bi bi-envelope me-2"></i>Email Adress :<A  class="text-muted" HREF="mailto:zakaria.brahimi@hotmail.com"> zakaria.brahimi@hotmail.com</A></li>
+                        </ul>
+                        <p class="lead mt-3">Or , you can find me in my social media :</p>
+                        <div class="row py-2 my-2">
+                            <div class="col-6 text-center"><a class="btn btn-primary " href=""><i class="bi bi-linkedin me-2"></i>Linkdin</a></div>
+                            <div class="col-6 text-center"><a class="btn btn-primary " href=""><i class="bi bi-facebook me-2"></i> Facebook</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-center"><a class="btn btn-primary " href=""><i class="bi bi-twitter me-2"></i>Twitter</a></div>
+                            <div class="col-6 text-center"><a class="btn btn-primary " href=""><i class="bi bi-instagram me-2"></i>Instgrame</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <section id="about" class="rounded-3 my-5 mx-5">
+        <div class="container  py-5">
+            <h1 class="text-center">About me</h1>
+            <p class="lead text-muted text-center pb-5">My introduction</p>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 text-center d-none d-lg-block">
+                    <img class="img-fluid img-thumbnail rounded-3" src="image/pino.jpg" alt="it's me">
+                </div>
+                <div class="col-lg-6 px-5">
+                        <p class="lead">Hello, <br> My name is BRAHIMI Zakaria . I am 21 years old. 
+                            I am Algerian and I live in Algeria.
+                        </p>
+                        <p class="lead">I am a software engineer student at the university of science and technology houari boumediene,
+                            i start devloping website since 2020 and i want to develop myself in this domaine.</p>
+                        <div class="btn btn-lg bot-purple my-3 text-white">Download CV <i class="bi bi-download text-white ps-2"></i></div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <!--**********SKILLS**********-->
+    <section id="skills" class=" rounded-3 my-5 py-3 mx-5">
+        <div class="container px-5 my-5">
+            <h1 class="text-center ">My Skills</h1>
+            <p class="lead text-muted text-center mb-3 pb-5">My technical level</p>
+            
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                    
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <div class="accordion-item" id="col1">
+                            <h2 class="accordion-header border-purple" id="flush-headingOne">
+                                <button id="btn1" class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <i class="bi bi-braces me-4 fs-1 purple"></i> <span  class="fs-5" id="front">Frontend Skills</span> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    HTML5
+                                                </div>
+                                                <div class="col text-end ">
+                                                        <i class="bi bi-star-fill "></i>
+                                                        <i class="bi bi-star-fill "></i>
+                                                        <i class="bi bi-star-fill "></i>
+                                                        <i class="bi bi-star "></i>
+                                                        <i class="bi bi-star "></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    CSS3
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Javascript
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Bootstrap
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <div class="accordion-item" id="col2">
+                            <h2 class="accordion-header border-purple" id="flush-headingTwo">
+                                <button id="btn2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <i class="bi bi-code-slash me-4 fs-1 purple"></i> <span class="fs-5" id="back">Backend Skills</span> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Java
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Ajax
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    MySql
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    PHP
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Laravel
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="accordion-item " id="col3">
+                            <h2 class="accordion-header  border-purple" id="flush-headingThree">
+                                <button id="btn3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <i class="bi bi-book fs-1 me-4 purple"></i><span class="fs-5" id="other">Other Skills</span> 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-flush" >
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    UML
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Merise
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Design Pattern
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    Clean Code
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    MVC
+                                                </div>
+                                                <div class="col text-end">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!--***********Projects*******-->
+    <section id="projects" class=" pt-3 pb-1 my-5 mx-5 rounded-3">
+        <div class="container-lg">
+            <h1 class="text-center pt-3">My projects</h1>
+            <p class="text-center lead text-muted">here is my projects, you can visit anyone !</p>
+            <div class="row mt-5 mb-3">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bot-purple bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark" aria-label="Slide 3"></button>
+                    </div>
+
+                    
+                        <div class="carousel-inner">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-8 mb-5">
+                                        <div class="carousel-item active">
+                                            <div class="d-block w-100 ">
+                                                <div class="card border-secondary mb-3">
+                                                    <div class="card-header text-center text-white bot-purple lead">BLOG</div>
+                                                    <div class="card-body card-color" id="prj1">
+                                                        <h5 class="card-title text-center">Name</h5>
+                                                        <p class="card-text">
+                                                            A simple Blog created using : 
+                                                            <ul>
+                                                                <li>PHP</li>
+                                                                <li>MySql</li>
+                                                                <li>Bootstrap</li>
+                                                                <li>Ajax</li>
+                                                            </ul>
+                                                        </p>
+                                                        <a href="#" class="btn text-white bot-purple">Visit it</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="carousel-item">
+                                            <div class="d-block w-100">
+                                                <div class="card border-secondary mb-3">
+                                                    <div class="card-header text-center text-white bot-purple lead">ECommerce Website</div>
+                                                    <div class="card-body card-color" id="prj2">
+                                                        <h5 class="card-title text-center">Otaku Wear</h5>
+                                                        <p class="card-text">
+                                                            An ECommerce Website where we sell a 
+                                                            custom tshirt and stuffs ,created using : 
+                                                            <ul>
+                                                                <li>Laravel</li>
+                                                                <li>Javascript</li>
+                                                                <li>MySql</li>
+                                                                <li>Bootstrap</li>
+                                                            </ul>
+                                                        </p>
+                                                        <a href="#" class="btn text-white bot-purple">Visit it</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="carousel-item">
+                                            <div class="d-block w-100">
+                                                <div class="card border-secondary mb-3">
+                                                    <div class="card-header text-center text-white bot-purple lead">Static E-learning website</div>
+                                                    <div class="card-body card-color" id="prj3">
+                                                        <h5 class="card-title text-center">PinoBootcamp</h5>
+                                                        <p class="card-text">
+                                                            A simple static E-learning website where we teach html/css/Js , <br> created using : 
+                                                            <ul>
+                                                                <li>Html</li>
+                                                                <li>CSS</li>
+                                                                <li>Javascript</li>
+                                                            </ul>
+                                                        </p>
+                                                        <a href="#" class="btn text-white bot-purple">Visit it</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                                
+    
+                        </div>
+                
+                    
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span aria-hidden="true"><i class="bi bi-arrow-left-circle-fill purple fs-2"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span aria-hidden="true"><i class="bi bi-arrow-right-circle-fill purple fs-2"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--************Contactme********-->
+    <section id="contact" class="my-5 py-5 mx-5">
+        <div id="cont" class="container-lg">
+            <h1 class="text-center pt-3">Contact me</h1>
+            <p class="text-center lead text-muted mb-5">Get in touch</p>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mt-4">
+                    <div class="row align-items-center">
+                        <div class="col-3 ">
+                            <i class="bi bi-telephone purple d-block fs-1"></i>
+                        </div>
+                        <div class="col-8 ">
+                            <div class="row align-items-start fs-4">
+                                Call Me
+                            </div>
+                            <div class="row align-items-end fs-5">
+                                0797 78 20 90
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <i class="bi bi-envelope purple d-block fs-1 my-5"></i> 
+                        </div>
+                        <div class="col-8">
+                            <div class="row align-items-start fs-4">
+                                Email
+                            </div>
+                            <div class="row align-items-end fs-5">
+                                zakaria.brahimi@hotmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <i class="bi bi-geo-alt purple d-block fs-1"></i> 
+                        </div>
+                        <div class="col-8">
+                            <div class="row align-items-start fs-4">
+                                Localisation
+                            </div>
+                            <div class="row align-items-end fs-5">
+                                Algeries , Alg Reghaia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5">
+                    <form action="">
+                        <div class="row">
+                            <div class=" col-lg-6 mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <label for="name" class="form-label">Company Name </label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-building"></i></span>
+                                    <input type="text" class="form-control" id="name" placeholder="Your company name">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Adress</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i> </span>
+                                <input type="email" class="form-control" id="email" placeholder="e.g.name@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ControlTextarea1" class="form-label">Your offer</label>
+                            <textarea class="form-control" id="ControlTextarea1" rows="3" placeholder="What type of service you need ?"></textarea>
+                        </div>
+                        <div class="text-start mb-3">
+                            <button type="submit" class="btn bot-purple text-white fs-5">Send Message<i class="bi bi-forward-fill fs-5 ms-2"></i></button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--***********FOOTER*******-->
+    
+
+    <footer class="footer-bg" id="footer">
+        <div class="container-fluid">
+            <div class="row pt-3 align-items-center">
+                <div class="col-lg-4 text-center">
+                    <h4>Zakaria BRAHIMI</h1>
+                    <h6>Software engineer Student</h3>
+                </div>
+                <div class="col-lg-4 ps-5">
+                    <ul class="list-group list-group-flush">
+                        <p class="lead">Social Media</p>
+                        <li class="list-group-item list-purple" id="li1"><a href="#" class="footerwh"><i class="bi bi-facebook me-2"></i>Facebook</a> </li>
+                        <li class="list-group-item list-purple" id="li2"><a href="#" class="footerwh"><i class="bi bi-instagram me-2"></i>Instagrame</a></li>
+                        <li class="list-group-item list-purple" id="li3"><a href="#" class="footerwh"><i class="bi bi-twitter me-2"></i>Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 ps-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-purple" id="li4"><a  href="#" class="footerwh">About me</a> </li>
+                        <li class="list-group-item list-purple" id="li5"><a  href="#" class="footerwh">My Skills</a> </li>
+                        <li class="list-group-item list-purple" id="li6"><a  href="#" class="footerwh">My projects</a></li>
+                        <li class="list-group-item list-purple" id="li7"><a  href="#" class="footerwh">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <p class="col-lg-4 my-2 text-center">&copy; 2021 BRAHIMI Zakaria, Inc</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
